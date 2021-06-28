@@ -9,6 +9,7 @@
         <a class="nav-link @if ( Route::currentRouteName() === 'home') active @endif" aria-current="page" href="{{ route('home')}}">Home</a>
         <a class="nav-link @if ( Route::currentRouteName() === 'contacts') active @endif" href="{{ route('contacts') }}">Contacts</a>
         <a class="nav-link @if ( Request::route()->getName() === 'comics.index') active @endif" href="{{ route('comics.index') }}" href="{{ route('comics.index')}}">i nostri fumetti</a>
+        <a class="nav-link @if ( Request::route()->getName() === 'comics.create') active @endif" href="{{ route('comics.create') }}" href="{{ route('comics.create')}}">Nuova Carta</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </div>
     </div>
